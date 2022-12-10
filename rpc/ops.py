@@ -39,6 +39,7 @@ class CommonOps(ABC):
         self._peer_writer = peer_writer
         self._seller_lock = threading.Lock()
         self._change_trader_lock = threading.Lock
+        self.num_peers = len(network)
 
     @staticmethod
     def get_product_enum(product):
@@ -64,9 +65,8 @@ class CommonOps(ABC):
     def change_trader(self, trader_id):
         LOGGER.info("Updating Trader List")
         trader_obj = self._network[trader_id]
-        LOGGER.info(f" trader obj : {trader_obj}")
         self.current_peer.trader_list = [(trader_obj.id, trader_obj.host, trader_obj.port)]
-        LOGGER.info(f"current obj's trader list :{self.current_peer.trader_list}")
+        LOGGER.info(f"Current peer: {self.current_peer.id} trader list :{self.current_peer.trader_list}")
 
     def update_cache(self, db_cache):
         trader_id = self.current_peer.id
@@ -158,8 +158,7 @@ class CommonOps(ABC):
                 if available_sellers:
                     LOGGER.info(
                         f"Trader: {trader_id} is selling product: {product} to buyer:{buyer_id}")
-                    # TODO : change the hardcoded value
-                    warehouse_obj = self._network[6]
+                    warehouse_obj = self._network[self.num_peers-1]
                     rpc_conn2 = self._get_rpc_connection(warehouse_obj.host, warehouse_obj.port)
                     func_to_execute2 = lambda: rpc_conn2.buy_on_warehouse(buyer_id, product, self.current_peer.id)
                     self._execute_in_thread(func_to_execute2)
@@ -232,8 +231,7 @@ class CommonOps(ABC):
     def register_products_trader(self, seller_id, product, quantity):
         with self._register_product:
             LOGGER.info(f"Inside register_products_trader()")
-            # TODO : change the hardcoded value
-            warehouse_obj = self._network[6]
+            warehouse_obj = self._network[self.num_peers-1]
             rpn_conn = self._get_rpc_connection(warehouse_obj.host, warehouse_obj.port)
             function_to_execute = lambda: rpn_conn.register_products_warehouse(seller_id, product, quantity,
                                                                                self.current_peer.id)

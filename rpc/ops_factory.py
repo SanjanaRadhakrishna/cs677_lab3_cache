@@ -1,4 +1,3 @@
-import collections
 from typing import Dict
 
 
@@ -14,7 +13,6 @@ class OpsFactory:
                 current_peer: Peer,
                 peer_writer: PeerWriter,
                 item_quantities_map: dict,
-                queue : collections.deque,
                 thread_pool_size=20
 
                 ):

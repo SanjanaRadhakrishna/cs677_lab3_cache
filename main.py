@@ -16,10 +16,10 @@ from rpc.rpc_helper import RpcHelper
 from utils import pickle_to_file
 
 LOGGER = get_logger(__name__)
-from process import sellers_lock,peers_lock
+from process import sellers_lock, peers_lock
 from json_files.json_ops import PeerWriter
 
-peer_writer = PeerWriter(peers_lock,sellers_lock)
+peer_writer = PeerWriter(peers_lock, sellers_lock)
 
 
 def create_and_get_network(num_peers: int) -> dict:
@@ -31,22 +31,28 @@ def create_and_get_network(num_peers: int) -> dict:
     network_generator = NetworkCreator(nodes=peers)
     network = network_generator.generate_network()
 
-    leader_1,leader_2 = initial_leader_election()
-    network[leader_1].type = PeerType.TRADER
-    network[leader_2].type = PeerType.TRADER
-
-    for peer_id, peer in network.items():
-        network[peer_id].trader_list = [(leader_1,network[leader_1].host,network[leader_1].port),(leader_2, network[leader_2].host,network[leader_2].port)]
-
     network_dict = {}
     for peer_id, peer in network.items():
         new_dict = peer.__dict__
         network_dict[peer_id] = new_dict
+    peer_writer.write_peers(network_dict)
+
+    leader_1, leader_2 = initial_leader_election()
+    network[leader_1].type = PeerType.TRADER
+    network[leader_2].type = PeerType.TRADER
+
+    for peer_id, peer in network.items():
+        network[peer_id].trader_list = [(leader_1, network[leader_1].host, network[leader_1].port),
+                                        (leader_2, network[leader_2].host, network[leader_2].port)]
 
     sellers = {}
-    peer_writer.write_sellers(sellers)
+    peer_writer.write_sellers(sellers, 'warehouse')
 
-    peer_writer.write_peers(network_dict)
+    filename = 'trader_cache_' + str(leader_1)
+    sellers = peer_writer.write_sellers(sellers, filename)
+
+    filename = 'trader_cache_' + str(leader_2)
+    sellers = peer_writer.write_sellers(sellers, filename)
 
     LOGGER.info("------------Network------------")
     network_generator.print(network)
@@ -61,18 +67,19 @@ def initial_leader_election():
         if int(peer_id) > leader:
             leader = int(peer_id)
 
-    leader_1 = leader-1
-    leader_2 = leader-2
+    leader_1 = leader - 1
+    leader_2 = leader - 2
     for peer_id, peer_dict in network_dict.items():
-        network_dict[peer_id]['trader_list'] = [(leader_1 ,network_dict[str(leader_1)]['host'],network_dict[str(leader_1)]['port']) ,
-                                                (leader_2,network_dict[str(leader_2)]['host'],network_dict[str(leader_2)]['port'])]
+        network_dict[peer_id]['trader_list'] = [
+            (leader_1, network_dict[str(leader_1)]['host'], network_dict[str(leader_1)]['port']),
+            (leader_2, network_dict[str(leader_2)]['host'], network_dict[str(leader_2)]['port'])]
 
     network_dict[str(leader_1)]['type'] = "TRADER"
     network_dict[str(leader_2)]['type'] = "TRADER"
 
     peer_writer.write_peers(network_dict)
-    LOGGER.info(f"Leaders elected are: {str(leader_1),str(leader_2)}")
-    return [leader_1,leader_2]
+    LOGGER.info(f"Leaders elected are: {str(leader_1), str(leader_2)}")
+    return [leader_1, leader_2]
 
 
 def spawn_child_processes(network_map: dict, num_peers: int):
@@ -86,10 +93,11 @@ def spawn_child_processes(network_map: dict, num_peers: int):
     with Pool(num_peers) as p:
         p.map(start_process, peer_ids)
 
+
 def initialize_app(num_peers: int):
     # Create the network map
     network = create_and_get_network(num_peers)
-    
+
     # # Create a warehouse
     # create_warehouse(network)
 

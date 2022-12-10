@@ -73,14 +73,6 @@ def handle_process_start(ops, current_peer_obj: Peer, network_map: Dict[str, Pee
                 trader_connection.buy_on_trader(current_id, current_item)
                 LOGGER.info(f"Transaction is complete")
                 sleep(10)
-
-            except ValueError as e:
-                LOGGER.info("No seller found. Please request for another item")
-                LOGGER.info(f"Opting new item!")
-                new_item = get_new_item(current_item=current_item)
-                LOGGER.info(f"Buyer {current_id} buying new item {new_item}. "
-                            f"Old item was {current_item}!")
-                current_peer_obj.item = new_item
             except Exception as ex:
                 LOGGER.exception(f"Failed to execute buy call")
 
@@ -118,14 +110,12 @@ def handle_process_start(ops, current_peer_obj: Peer, network_map: Dict[str, Pee
         scheduler_thread.start()
 
 def accrue_ng_goods(seller_id,tg,ng,network_map):
-    LOGGER.info(f"Seller {seller_id} accruing {ng} number of goods")
+
     while True:
         sleep(tg)
         seller_obj = network_map[seller_id]
-        LOGGER.info(f"Seller obj: {seller_obj}")
-        #new_item = get_new_item(current_item=seller_obj.item)
+        LOGGER.info(f"Seller {seller_id} accruing {ng} number of item:{seller_obj.item}")
         quantity, price = config.item_quantities_map[seller_obj.item]
-        #seller_obj.item = new_item
         seller_obj.quantity = ng
         seller_obj.price = price
         trader = random.choice(seller_obj.trader_list)
@@ -137,7 +127,6 @@ def accrue_ng_goods(seller_id,tg,ng,network_map):
         rpn_conn.register_products_trader(seller_id, seller_obj.item, ng)
 
 def called_scheduler(warehouse_id,network_map,peer_writer):
-    LOGGER.info(f"called_scheduler() is called")
     warehouse_obj = network_map[warehouse_id]
     trader_list = warehouse_obj.trader_list
     warehouse_db = peer_writer.get_sellers('warehouse')
@@ -147,7 +136,7 @@ def called_scheduler(warehouse_id,network_map,peer_writer):
         rpn_conn.update_cache(warehouse_db)
 
 def scheduler(warehouse_id, network_map,peer_writer):
-    LOGGER.info(f"scheduler() is called")
+    LOGGER.info(f"Scheduler to update trader's cache")
     while True:
         sleep(15)
         called_scheduler(warehouse_id,network_map,peer_writer)

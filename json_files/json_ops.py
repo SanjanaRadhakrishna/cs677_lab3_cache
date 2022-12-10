@@ -16,19 +16,11 @@ class PeerWriter:
         self.peers_lock = peers_lock
         self.sellers_lock = sellers_lock
 
-    # def write_sellers(self, seller_list: List):
-    #     sleep(random())
-    #     LOGGER.info("Writing sellers into a file")
-    #     with open('sellers.txt', 'w') as f:
-    #         for item in seller_list:
-    #             f.write("%s\n" % item)
-    #     LOGGER.info("Writing to a sellers file is successful")
-
     def get_lock(self):
         return self.method_lock
 
     def write_peers(self, network: Dict[str, Peer]):
-        LOGGER.info(f"Writing network to file {network}")
+        LOGGER.info(f"Writing network to file")
         sleep(random())
         with open('peers.json', 'w') as f:
             json.dump(network, f)
@@ -42,23 +34,9 @@ class PeerWriter:
         LOGGER.info("Reading from a file is successful")
         return data
 
-    # def get_sellers(self):
-    #     seller_list = []
-    #     sleep(random())
-    #     LOGGER.info("Reading sellers from a file")
-    #     with open('sellers.txt', 'r') as f:
-    #         if f:
-    #             for line in f:
-    #                 x = line[:-1]
-    #                 if x != '':
-    #                     seller_list.append(x)
-    #     LOGGER.info("Reading from a sellers file is successful")
-    #     return seller_list
-
     def get_sellers(self,file_name):
         LOGGER.info(f"Reading seller from a {file_name} file")
         file_name = file_name+'.json'
-        LOGGER.info(f"Complete filename: {file_name}")
         with open(file_name,'r') as f:
             data = json.load(f)
         LOGGER.info(f"Reading from {file_name} file is successful")

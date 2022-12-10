@@ -46,18 +46,26 @@ def create_and_get_network(num_peers: int) -> dict:
                                         (leader_2, network[leader_2].host, network[leader_2].port)]
 
     sellers = {}
+    filename = 'warehouse.json'
+    with open(filename, 'w') as f:
+        f.write('')
     peer_writer.write_sellers(sellers, 'warehouse')
 
+    filename = 'trader_cache_' + str(leader_1)+'.json'
+    with open(filename, 'w') as f:
+        f.write('')
     filename = 'trader_cache_' + str(leader_1)
     sellers = peer_writer.write_sellers(sellers, filename)
 
+    filename = 'trader_cache_' + str(leader_2)+'.json'
+    with open(filename, 'w') as f:
+        f.write('')
     filename = 'trader_cache_' + str(leader_2)
     sellers = peer_writer.write_sellers(sellers, filename)
 
     LOGGER.info("------------Network------------")
     network_generator.print(network)
     return network
-
 
 def initial_leader_election():
     LOGGER.info("Initial Leader Election")

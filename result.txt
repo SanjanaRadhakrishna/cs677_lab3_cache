@@ -9,13 +9,11 @@
 15:30:34 - process - INFO - Seller accrued 10 of item: boar
 15:30:34 - rpc.ops - INFO - Inside register_products_trader()
 15:30:34 - rpc.ops - INFO - host localhost, port 62555
- 4
-15:28:54 - process - INFO - Transaction is complete
-15:28:54 - rpc.ops - INFO - No seller found. Please request for another item
-15:28:54 - rpc.ops - INFO - Opting new item!
-15:28:54 - rpc.ops - INFO - Buyer 3 buying new item salt. Old item was fish!
-15:29:04 - process - INFO - Buyer 3 sending buy request for item salt
-15:29:04 - process - INFO -  Selected trader : 4 trader host localhost , trader port 62553
+15:31:34 - process - INFO - Seller obj: Peer id: 2, neighbours: [0, 1, 3, 4, 5], type: SELLER, item: boar, quantity: 10 ,amt_spent : 0 , amt_earned: 0 , commission: 0>
+15:31:34 - process - INFO - Seller accrued 10 of item: boar
+15:31:34 - rpc.ops - INFO - Inside register_products_trader()
+15:31:34 - rpc.ops - INFO - host localhost, port 62555
+INFO -  Selected trader : 4 trader host localhost , trader port 62553
 15:29:04 - process - INFO -  Buyer is requesting the item:salt from the trader : 4
 15:29:04 - process - INFO - Transaction is complete
 15:29:05 - rpc.ops - INFO - No seller found. Please request for another item
@@ -71,53 +69,49 @@
 15:30:54 - process - INFO -  Selected trader : 4 trader host localhost , trader port 62553
 15:30:54 - process - INFO -  Buyer is requesting the item:boar from the trader : 4
 15:30:54 - process - INFO - Transaction is complete
-lete
-15:30:44 - process - INFO - Buyer 1 sending buy request for item boar
-15:30:44 - process - INFO -  Selected trader : 5 trader host localhost , trader port 62554
-15:30:44 - process - INFO -  Buyer is requesting the item:boar from the trader : 5
-15:30:44 - process - INFO - Transaction is complete
-15:30:54 - process - INFO - Buyer 1 sending buy request for item boar
-15:30:54 - process - INFO -  Selected trader : 5 trader host localhost , trader port 62554
-15:30:54 - process - INFO -  Buyer is requesting the item:boar from the trader : 5
-15:30:54 - process - INFO - Transaction is complete
-_cache_4 file
-15:29:21 - json_files.json_ops - INFO - Writing to a trader_cache_4.json file is successful
-15:29:21 - rpc.ops - INFO - Updated trader:15:29:22 - process - INFO - Sending a heartbeat request on trader :4
-15:29:22 - process - INFO - Trader 4 : I am OK
-15:29:24 - process - INFO - Sending a heartbeat request on trader :4
-15:29:24 - process - INFO - Trader 4 : I am OK
-15:29:26 - process - INFO - Sending a heartbeat request on trader :4
-15:29:26 - process - INFO - Trader 4 : I am OK
-15:29:28 - process - INFO - Sending a heartbeat request on trader :4
-15:29:28 - process - INFO - Trader 4 : I am OK
-15:29:30 - process - INFO - Sending a heartbeat request on trader :4
-15:29:30 - process - INFO - Trader 4 : I am OK
-15:29:32 - process - INFO - Sending a heartbeat request on trader :4
-15:29:32 - process - INFO - Trader 4 : I am OK
-15:29:34 - rpc.ops - INFO - filename: trader_cache_5
-15:29:34 - json_files.json_ops - INFO - Reading seller from a trader_cache_5 file
-15:29:34 - json_files.json_ops - INFO - Complete filename: trader_cache_5.json
-15:29:34 - json_files.json_ops - INFO - Reading from trader_cache_5.json file is successful
-15:29:34 - rpc.ops - INFO - Sellers here: {'2': {'product': 'boar', 'quantity': 2}}
-15:29:34 - rpc.ops - INFO - Available Sellers: []
-15:29:34 - rpc.ops - INFO - No seller found selling this product!
-15:29:34 - rpc.ops - INFO - Item couldn't be shipped!
-15:29:34 - rpc.ops - INFO - Please request another item
-15:29:34 - rpc.ops - INFO - host localhost, port 62550
-15:29:34 - process - INFO - Sending a heartbeat request on trader :4
-15:29:34 - process - INFO - Trader 4 : I am OK
-15:29:36 - process - INFO - Sending a heartbeat request on trader :4
-15:29:36 - process - INFO - Trader 4 : I am OK
-15:29:36 - json_files.json_ops - INFO - Writing sellers to trader_cache_5 file
-15:29:37 - json_files.json_ops - INFO - Writing to a trader_cache_5.json file is successful
-15:29:37 - rpc.ops - INFO - Updated trader: 5's cache after 10s
-15:29:38 - process - INFO - Sending a heartbeat request on trader :4
-15:29:38 - process - INFO - Trader 4 : I am OK
-15:29:40 - process - INFO - Sending a heartbeat request on trader :4
-15:29:40 - process - INFO - Trader 4 : I am OK
-15:29:42 - process - INFO - Sending a heartbeat request on trader :4
-15:29:42 - process - INFO - Trader 4 : I am OK
-15:29:44 - rpc.ops - INFO - filename: trader_cache_5
+15:31:04 - process - INFO - Buyer 3 sending buy request for item boar
+15:31:04 - process - INFO -  Selected trader : 4 trader host localhost , trader port 62553
+15:31:04 - process - INFO -  Buyer is requesting the item:boar from the trader : 4
+15:31:04 - process - INFO - Transaction is complete
+15:31:14 - process - INFO - Buyer 3 sending buy request for item boar
+15:31:14 - process - INFO -  Selected trader : 4 trader host localhost , trader port 62553
+15:31:14 - process - INFO -  Buyer is requesting the item:boar from the trader : 4
+15:31:14 - process - INFO - Transaction is complete
+15:31:24 - process - INFO - Buyer 3 sending buy request for item boar
+15:31:24 - process - INFO -  Selected trader : 5 trader host localhost , trader port 62554
+15:31:24 - process - INFO -  Buyer is requesting the item:boar from the trader : 5
+15:31:24 - process - INFO - Transaction is complete
+15:31:25 - rpc.ops - INFO - No seller found. Please request for another item
+15:31:25 - rpc.ops - INFO - Opting new item!
+15:31:25 - rpc.ops - INFO - Buyer 3 buying new item salt. Old item was boar!
+15:31:34 - process - INFO - Buyer 3 sending buy request for item salt
+15:31:34 - process - INFO -  Selected trader : 4 trader host localhost , trader port 62553
+15:31:34 - process - INFO -  Buyer is requesting the item:salt from the trader : 4
+15:31:34 - process - INFO - Transaction is complete
+15:31:34 - rpc.ops - INFO - No seller found. Please request for another item
+15:31:34 - rpc.ops - INFO - Opting new item!
+15:31:34 - rpc.ops - INFO - Buyer 3 buying new item boar. Old item was salt!
+15:31:44 - process - INFO - Buyer 3 sending buy request for item boar
+15:31:44 - process - INFO -  Selected trader : 4 trader host localhost , trader port 62553
+15:31:44 - process - INFO -  Buyer is requesting the item:boar from the trader : 4
+15:31:44 - process - INFO - Transaction is complete
+15:31:54 - process - INFO - Buyer 3 sending buy request for item boar
+15:31:54 - process - INFO -  Selected trader : 5 trader host localhost , trader port 62554
+15:31:54 - process - INFO -  Buyer is requesting the item:boar from the trader : 5
+15:31:54 - process - INFO - Transaction is complete
+ish!
+15:31:44 - process - INFO - Buyer 1 sending buy request for item salt
+15:31:44 - process - INFO -  Selected trader : 5 trader host localhost , trader port 62554
+15:31:44 - process - INFO -  Buyer is requesting the item:salt from the trader : 5
+15:31:44 - process - INFO - Transaction is complete
+15:31:44 - rpc.ops - INFO - No seller found. Please request for another item
+15:31:44 - rpc.ops - INFO - Opting new item!
+15:31:44 - rpc.ops - INFO - Buyer 1 buying new item boar. Old item was salt!
+15:31:54 - process - INFO - Buyer 1 sending buy request for item boar
+15:31:54 - process - INFO -  Selected trader : 5 trader host localhost , trader port 62554
+15:31:54 - process - INFO -  Buyer is requesting the item:boar from the trader : 5
+15:31:54 - process - INFO - Transaction is complete
+er_cache_5
 15:29:44 - json_files.json_ops - INFO - Reading seller from a trader_cache_5 file
 15:29:44 - json_files.json_ops - INFO - Complete filename: trader_cache_5.json
 15:29:44 - json_files.json_ops - INFO - Reading from trader_cache_5.json file is successful
@@ -255,125 +249,135 @@ _cache_4 file
 15:30:56 - process - INFO - Sending a heartbeat request on trader :4
 15:30:56 - process - INFO - Trader 4 : I am OK
 15:315:30:57 - json_files.json_ops - INFO - Writing sellers to trader_cache_4 file
-0:57 - json_files.json_ops - INFO - Writing to a trader_cache_5.json file is successful
-15:30:57 - rpc.ops - INFO - Updated trader: 5's cache after 10s
-: warehouse.json
-15:30:25 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
-15:30:25 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:25 - json_files.json_ops - INFO - Reading seller from a warehouse file
-15:30:25 - json_files.json_ops - INFO - Complete filename: warehouse.json
-15:30:25 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
-15:30:25 - rpc.ops - INFO - Inside buy_on_warehouse()
-15:30:25 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 4}}
-15:30:25 - rpc.ops - INFO - Available Sellers: ['2']
-15:30:25 - rpc.ops - INFO - Selected seller: 2
-15:30:25 - rpc.ops - INFO - Quantity remaining: 3
-15:30:25 - rpc.ops - INFO - Buy is successful
-15:30:25 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:26 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:26 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:26 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:34 - rpc.ops - INFO - Trader : 0 registering seller: 0's products on warehouse!
-15:30:34 - json_files.json_ops - INFO - Reading seller from a warehouse file
-15:30:34 - json_files.json_ops - INFO - Complete filename: warehouse.json
-15:30:34 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
-15:30:34 - rpc.ops - INFO - Ware house sellers: {'0': {'product': 'salt', 'quantity': 10}}
-15:30:34 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:34 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:34 - json_files.json_ops - INFO - Reading seller from a trader_cache_4 file
-15:30:34 - json_files.json_ops - INFO - Complete filename: trader_cache_4.json
-15:30:34 - json_files.json_ops - INFO - Reading from trader_cache_4.json file is successful
-15:30:34 - rpc.ops - INFO -  =============After reading: {'2': {'product': 'boar', 'quantity': 4}} 
-15:30:34 - json_files.json_ops - INFO - Writing sellers to trader_cache_4 file
-15:30:34 - json_files.json_ops - INFO - Writing to a trader_cache_4.json file is successful
-15:30:34 - rpc.ops - INFO - trader4  house sellers: {'2': {'product': 'boar', 'quantity': 4}}
-15:30:34 - json_files.json_ops - INFO - Reading seller from a trader_cache_5 file
-15:30:34 - json_files.json_ops - INFO - Complete filename: trader_cache_5.json
-15:30:34 - json_files.json_ops - INFO - Reading from trader_cache_5.json file is successful
-15:30:34 - rpc.ops - INFO -  =============After reading: {'2': {'product': 'boar', 'quantity': 4}} 
-15:30:34 - json_files.json_ops - INFO - Writing sellers to trader_cache_5 file
-15:30:35 - json_files.json_ops - INFO - Writing to a trader_cache_5.json file is successful
-15:30:35 - rpc.ops - INFO - trader5  house sellers: {'2': {'product': 'boar', 'quantity': 4}}
-15:30:35 - rpc.ops - INFO - Trader : 2 registering seller: 2's products on warehouse!
-15:30:35 - json_files.json_ops - INFO - Reading seller from a warehouse file
-15:30:35 - json_files.json_ops - INFO - Complete filename: warehouse.json
-15:30:35 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
-15:30:35 - rpc.ops - INFO - Ware house sellers: {'2': {'product': 'boar', 'quantity': 10}}
-15:30:35 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:36 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:36 - json_files.json_ops - INFO - Reading seller from a trader_cache_4 file
-15:30:36 - json_files.json_ops - INFO - Complete filename: trader_cache_4.json
-15:30:36 - json_files.json_ops - INFO - Reading from trader_cache_4.json file is successful
-15:30:36 - rpc.ops - INFO -  =============After reading: {'2': {'product': 'boar', 'quantity': 4}} 
-15:30:36 - json_files.json_ops - INFO - Writing sellers to trader_cache_4 file
-15:30:37 - json_files.json_ops - INFO - Writing to a trader_cache_4.json file is successful
-15:30:37 - rpc.ops - INFO - trader4  house sellers: {'2': {'product': 'boar', 'quantity': 10}}
-15:30:37 - json_files.json_ops - INFO - Reading seller from a trader_cache_5 file
-15:30:37 - json_files.json_ops - INFO - Complete filename: trader_cache_5.json
-15:30:37 - json_files.json_ops - INFO - Reading from trader_cache_5.json file is successful
-15:30:37 - rpc.ops - INFO -  =============After reading: {'2': {'product': 'boar', 'quantity': 4}} 
-15:30:37 - json_files.json_ops - INFO - Writing sellers to trader_cache_5 file
-15:30:37 - json_files.json_ops - INFO - Writing to a trader_cache_5.json file is successful
-15:30:37 - rpc.ops - INFO - trader5  house sellers: {'2': {'product': 'boar', 'quantity': 10}}
-15:30:37 - json_files.json_ops - INFO - Reading seller from a warehouse file
-15:30:37 - json_files.json_ops - INFO - Complete filename: warehouse.json
-15:30:37 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
-15:30:37 - rpc.ops - INFO - Inside buy_on_warehouse()
-15:30:37 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 10}}
-15:30:37 - rpc.ops - INFO - Available Sellers: ['2']
-15:30:37 - rpc.ops - INFO - Selected seller: 2
-15:30:37 - rpc.ops - INFO - Quantity remaining: 9
-15:30:37 - rpc.ops - INFO - Buy is successful
-15:30:37 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:38 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:38 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:39 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:39 - json_files.json_ops - INFO - Reading seller from a warehouse file
-15:30:39 - json_files.json_ops - INFO - Complete filename: warehouse.json
-15:30:39 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
-15:30:39 - rpc.ops - INFO - Inside buy_on_warehouse()
-15:30:39 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 9}}
-15:30:39 - rpc.ops - INFO - Available Sellers: ['2']
-15:30:39 - rpc.ops - INFO - Selected seller: 2
-15:30:39 - rpc.ops - INFO - Quantity remaining: 8
-15:30:39 - rpc.ops - INFO - Buy is successful
-15:30:39 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:40 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:40 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:40 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:41 - process - INFO - called_scheduler() is called
-15:30:41 - json_files.json_ops - INFO - Reading seller from a warehouse file
-15:30:41 - json_files.json_ops - INFO - Complete filename: warehouse.json
-15:30:41 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
-15:30:44 - json_files.json_ops - INFO - Reading seller from a warehouse file
-15:30:44 - json_files.json_ops - INFO - Complete filename: warehouse.json
-15:30:44 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
-15:30:44 - rpc.ops - INFO - Inside buy_on_warehouse()
-15:30:44 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 8}}
-15:30:44 - rpc.ops - INFO - Available Sellers: ['2']
-15:30:44 - rpc.ops - INFO - Selected seller: 2
-15:30:44 - rpc.ops - INFO - Quantity remaining: 7
-15:30:44 - rpc.ops - INFO - Buy is successful
-15:30:44 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:44 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:44 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:45 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:45 - json_files.json_ops - INFO - Reading seller from a warehouse file
-15:30:45 - json_files.json_ops - INFO - Complete filename: warehouse.json
-15:30:45 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
-15:30:45 - rpc.ops - INFO - Inside buy_on_warehouse()
-15:30:45 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 7}}
-15:30:45 - rpc.ops - INFO - Available Sellers: ['2']
-15:30:45 - rpc.ops - INFO - Selected seller: 2
-15:30:45 - rpc.ops - INFO - Quantity remaining: 6
-15:30:45 - rpc.ops - INFO - Buy is successful
-15:30:45 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:45 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:45 - json_files.json_ops - INFO - Writing sellers to warehouse file
-15:30:45 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
-15:30:54 - json_files.json_ops - INFO - Reading seller from a warehouse file
-15:30:54 - json_files.json_ops - INFO - Complete filename: warehouse.json
-15:30:54 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:30:58 - json_files.json_ops - INFO - Writing to a trader_cache_4.json file is successful
+15:30:58 - rpc.ops - INFO - Updated trader: 4's cache after 15:30:58 - process - INFO - Sending a heartbeat request on trader :4
+15:30:58 - process - INFO - Trader 4 : I am OK
+15:31:00 - process - INFO - Sending a heartbeat request on trader :4
+15:31:00 - process - INFO - Trader 4 : I am OK
+15:31:02 - process - INFO - Sending a heartbeat request on trader :4
+15:31:02 - process - INFO - Trader 4 : I am OK
+15:315:31:04 - rpc.ops - INFO - filename: trader_cache_4
+15:31:04 - json_files.json_ops - INFO - Reading seller from a trader_cache_4 file
+15:31:04 - json_files.json_ops - INFO - Complete filename: trader_cache_4.json
+15:31:04 - json_files.json_ops - INFO - Reading from trader_cache_4.json file is successful
+15:31:04 - rpc.ops - INFO - Sellers here: {'2': {'product': 'boar', 'quantity': 4}}
+15:31:04 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:04 - rpc.ops - INFO - Buy call by buyer: 3 on trader: 4 for product: boar
+15:31:04 - rpc.ops - INFO - Calling buy_on_warehouse()
+15:31:04 - rpc.ops - INFO - host localhost, port 6215:31:04 - process - INFO - Sending a heartbeat request on trader :4
+15:31:04 - process - INFO - Trader 4 : I am OK
+15:31:06 - process - INFO - Sending a heartbeat request on trader :4
+15:31:06 - process - INFO - Trader 4 : I am OK
+15:31:08 - process - INFO - Sending a heartbeat request on trader :4
+15:31:08 - process - INFO - Trader 4 : I am OK
+15:31:10 - process - INFO - Sending a heartbeat request on trader :4
+15:31:10 - process - INFO - Trader 4 : I am OK
+15:31:12 - process - INFO - Sending a heartbeat request on trader :4
+15:31:12 - process - INFO - Trader 4 : I am OK
+15:315:31:14 - json_files.json_ops - INFO - Writing sellers to trader_cache_4 file
+15:31:14 - rpc.ops - INFO - filename: trader_cache_4
+15:31:14 - json_files.json_ops - INFO - Reading seller from a trader_cache_4 file
+15:31:14 - json_f15:31:14 - process - INFO - Sending a heartbeat request on trader :4
+15:31:14 - process - INFO - Trader 4 : I am OK
+15:31:16 - process - INFO - Sending a heartbeat request on trader :4
+15:31:16 - process - INFO - Trader 4 : I am OK
+15:31:18 - process - INFO - Sending a heartbeat request on trader :4
+15:31:18 - process - INFO - Trader 4 : I am OK
+15:31:20 - process - INFO - Sending a heartbeat request on trader :4
+15:31:20 - process - INFO - Trader 4 : I am OK
+15:31:22 - process - INFO - Sending a heartbeat request on trader :4
+15:31:22 - process - INFO - Trader 4 : I am OK
+15:31:24 - rpc.ops - INFO - filename: trader_cache_5
+15:31:24 - json_files.json_ops - INFO - Reading seller from a trader_cache_5 file
+15:31:24 - json_files.json_ops - INFO - Complete filename: trader_cache_5.json
+15:31:24 - json_files.json_ops - INFO - Reading from trader_cache_5.json file is successful
+15:31:24 - rpc.ops - INFO - Sellers here: {'2': {'product': 'boar', 'quantity': 2}}
+15:31:24 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:24 - rpc.ops - INFO - Buy call by buyer: 1 on trader: 5 for product: boar
+15:31:24 - rpc.ops - INFO - Calling buy_on_warehouse()
+15:31:24 - rpc.ops - INFO - host localhost, port 62555
+15:31:24 - rpc.ops - INFO - filename: trader_cache_5
+15:31:24 - json_files.json_ops - INFO - Reading seller from a trader_cache_5 file
+15:31:24 - json_files.json_ops - INFO - Complete filename: trader_cache_5.json
+15:31:24 - json_files.json_ops - INFO - Reading from trader_cache_5.json file is successful
+15:31:24 - rpc.ops - INFO - Sellers here: {'2': {'product': 'boar', 'quantity': 2}}
+15:31:24 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:24 - rpc.ops - INFO - Buy call by buyer: 3 on trader: 5 for product: boar
+15:31:24 - rpc.ops - INFO - Calling buy_on_warehouse()
+15:31:24 - rpc.ops - INFO - host localhost, port 62555
+15:31:24 - process - INFO - Sending a heartbeat request on trader :4
+15:31:24 - process - INFO - Trader 4 : I am OK
+15:315:31:26 - process - INFO - Sending a heartbeat request on trader :5
+15:31:26 - process - INFO - Trader 5 15:31:26 -15:31:28 - process - INFO - Sending a heartbeat request on trader :5
+15:31:28 - process - INFO - Trader 5 15:31:28 -15:31:30 - json_files.json_ops - INFO - Writing sellers to trader_cache_4 file
+15:31:30 - process - INFO - Sending a heartbeat request on trader :5
+15:31:30 - process - INFO - Trader 5 : I am OK
+15:31:30 - json_files.json_ops - INFO - Writing to a trader_cache_4.json file is successful
+15:31:30 - rpc.ops - INFO - Updated trader: 4's cache after 10s
+15:31:32 - process - INFO - Sending a heartbeat request on trader :5
+15:31:32 - process - INFO - Trader 5 15:31:32 -15:31:34 - rpc.ops - INFO - filename: trader_cache_4
+15:31:34 - json_files.json_ops - INFO - Reading seller from a trader_cache_4 file
+15:31:34 - json_files.json_ops - INFO - Complete filename: trader_cache_4.json
+15:31:34 - json_files.json_ops - INFO - Reading from trader_cache_4.json file is successful
+15:31:34 - rpc.ops - INFO - Sellers here: {'2': {'product': 'boar', 'quantity': 0}}
+15:31:34 - rpc.ops - INFO - Available Sellers: []
+15:31:34 - rpc.ops - INFO - No seller found selling this product!
+15:31:34 - rpc.ops - INFO - Item couldn't be shipped!
+15:31:34 - rpc.ops - INFO - Please request another item
+15:31:34 - rpc.ops - INFO - host localhost, port 62552
+15:31:34 - process - INFO - Sending a heartbeat request on trader :5
+15:31:34 - process - INFO - Trader 5 15:31:34 -15:31:36 - process - INFO - Sending a heartbeat request on trader :5
+15:31:36 - process - INFO - Trader 5 15:31:36 -15:31:38 - process - INFO - Sending a heartbeat request on trader :5
+15:31:38 - process - INFO - Trader 5 15:31:38 -15:31:40 - process - INFO - Sending a heartbeat request on trader :5
+15:31:40 - process - INFO - Trader 5 15:31:40 -15:31:42 - process - INFO - Sending a heartbeat request on trader :5
+15:31:42 - process - INFO - Trader 5 15:31:42 -15:31:44 - rpc.ops - INFO - filename: trader_cache_4
+15:31:44 - json_files.json_ops - INFO - Reading seller from a trader_cache_4 file
+15:31:44 - json_files.json_ops - INFO - Complete filename: trader_cache_4.json
+15:31:44 - json_files.json_ops - INFO - Reading from trader_cache_4.json file is successful
+15:31:44 - rpc.ops - INFO - Sellers here: {'2': {'product': 'boar', 'quantity': 10}}
+15:31:44 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:44 - rpc.ops - INFO - Buy call by buyer: 3 on trader: 4 for product: boar
+15:31:44 - rpc.ops - INFO - Calling buy_on_warehouse()
+15:31:44 - rpc.ops - INFO - host localhost, port 62555
+15:31:44 - process - INFO - Sending a heartbeat request on trader :5
+15:31:44 - process - INFO - Trader 5 : I am OK
+15:31:46 - json_files.json_ops - INFO - Writing sellers to trader_cache_4 file
+15:31:46 - process - INFO - Sending a heartbeat request on trader :5
+15:31:46 - process - INFO - Trader 5 : I am OK
+15:31:47 - json_files.json_ops - INFO - Writing to a trader_cache_4.json file is successful
+15:31:47 - rpc.ops - INFO - Updated trader: 4's cache after 10s
+15:31:48 - process - INFO - Sending a heartbeat request on trader :5
+15:31:48 - process - INFO - Trader 5 : I am OK
+15:31:50 - process - INFO - Sending a heartbeat request on trader :5
+15:31:50 - process - INFO - Trader 5 : I am OK
+15:31:52 - process - INFO - Sending a heartbeat request on trader :5
+15:31:52 - process - INFO - Trader 5 : I am OK
+15:31:54 - process - INFO - Sending a heartbeat request on trader :5
+15:31:54 - process - INFO - Trader 5 : I am OK
+15:31:56 - process - INFO - Sending a heartbeat request on trader :5
+15:31:56 - process - INFO - Trader 5 : I am OK
+FO - Reading seller from a trader_cache_5 file
+15:31:54 - json_files.json_ops - INFO - Complete filename: trader_cache_5.json
+15:31:54 - json_files.json_ops - INFO - Reading from trader_cache_5.json file is successful
+15:31:54 - rpc.ops - INFO - Sellers here: {'2': {'product': 'boar', 'quantity': 9}}
+15:31:54 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:54 - rpc.ops - INFO - Buy call by buyer: 3 on trader: 5 for product: boar
+15:31:54 - rpc.ops - INFO - Calling buy_on_warehouse()
+15:31:54 - rpc.ops - INFO - host localhost, port 62555
+15:31:54 - rpc.ops - INFO - filename: trader_cache_5
+15:31:54 - json_files.json_ops - INFO - Reading seller from a trader_cache_5 file
+15:31:54 - json_files.json_ops - INFO - Complete filename: trader_cache_5.json
+15:31:54 - json_files.json_ops - INFO - Reading from trader_cache_5.json file is successful
+15:31:54 - rpc.ops - INFO - Sellers here: {'2': {'product': 'boar', 'quantity': 9}}
+15:31:54 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:54 - rpc.ops - INFO - Buy call by buyer: 1 on trader: 5 for product: boar
+15:31:54 - rpc.ops - INFO - Calling buy_on_warehouse()
+15:31:54 - rpc.ops - INFO - host localhost, port 62555
+15:31:54 - process - INFO - Sending a heartbeat request on trader :4
+15:31:54 - process - INFO - Trader 4 : I am OK
+15:31:56 - process - INFO - Sending a heartbeat request on trader :4
+15:31:56 - process - INFO - Trader 4 : I am OK
+s successful
 15:30:54 - rpc.ops - INFO - Inside buy_on_warehouse()
 15:30:54 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 6}}
 15:30:54 - rpc.ops - INFO - Available Sellers: ['2']
@@ -401,3 +405,177 @@ _cache_4 file
 15:30:57 - json_files.json_ops - INFO - Reading seller from a warehouse file
 15:30:57 - json_files.json_ops - INFO - Complete filename: warehouse.json
 15:30:57 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:04 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:04 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:04 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:04 - rpc.ops - INFO - Inside buy_on_warehouse()
+15:31:04 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 4}}
+15:31:04 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:04 - rpc.ops - INFO - Selected seller: 2
+15:31:04 - rpc.ops - INFO - Quantity remaining: 3
+15:31:04 - rpc.ops - INFO - Buy is successful
+15:31:04 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:04 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:04 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:05 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:05 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:05 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:05 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:05 - rpc.ops - INFO - Inside buy_on_warehouse()
+15:31:05 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 3}}
+15:31:05 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:05 - rpc.ops - INFO - Selected seller: 2
+15:31:05 - rpc.ops - INFO - Quantity remaining: 2
+15:31:05 - rpc.ops - INFO - Buy is successful
+15:31:05 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:06 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:06 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:06 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:13 - process - INFO - called_scheduler() is called
+15:31:13 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:13 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:13 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:14 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:14 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:14 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:14 - rpc.ops - INFO - Inside buy_on_warehouse()
+15:31:14 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 2}}
+15:31:14 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:14 - rpc.ops - INFO - Selected seller: 2
+15:31:14 - rpc.ops - INFO - Quantity remaining: 1
+15:31:14 - rpc.ops - INFO - Buy is successful
+15:31:14 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:14 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:14 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:15 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:15 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:15 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:15 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:15 - rpc.ops - INFO - Inside buy_on_warehouse()
+15:31:15 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 1}}
+15:31:15 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:15 - rpc.ops - INFO - Selected seller: 2
+15:31:15 - rpc.ops - INFO - Quantity remaining: 0
+15:31:15 - rpc.ops - INFO - Buy is successful
+15:31:15 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:15 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:15 - rpc.ops - INFO - Item sold! quantity remaining = 0
+15:31:15 - rpc.ops - INFO - Informing the seller to update it's product
+15:31:15 - rpc.ops - INFO - Selected seller again: 2
+15:31:15 - rpc.ops - INFO - Seller obj: Peer id: 2, neighbours: [0, 1, 3, 4, 5], type: SELLER, item: boar, quantity: 3 ,amt_spent : 0 , amt_earned: 0 , commission: 0>
+15:31:15 - rpc.ops - INFO - host localhost, port 62551
+15:31:15 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:16 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:24 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:24 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:24 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:24 - rpc.ops - INFO - Inside buy_on_warehouse()
+15:31:24 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 0}}
+15:31:24 - rpc.ops - INFO - Available Sellers: []
+15:31:24 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:25 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:25 - rpc.ops - INFO - No seller found selling this product!
+15:31:25 - rpc.ops - INFO - Informing trader about unavailability of product
+15:31:25 - rpc.ops - INFO - OVERSELLING: Requested buy transaction couldn't be completed for buyer :1
+15:31:25 - rpc.ops - INFO - host localhost, port 62554
+15:31:25 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:25 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:25 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:25 - rpc.ops - INFO - Inside buy_on_warehouse()
+15:31:25 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 0}}
+15:31:25 - rpc.ops - INFO - Available Sellers: []
+15:31:25 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:25 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:25 - rpc.ops - INFO - No seller found selling this product!
+15:31:25 - rpc.ops - INFO - Informing trader about unavailability of product
+15:31:25 - rpc.ops - INFO - OVERSELLING: Requested buy transaction couldn't be completed for buyer :3
+15:31:25 - rpc.ops - INFO - host localhost, port 62554
+15:31:29 - process - INFO - called_scheduler() is called
+15:31:29 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:29 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:29 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:34 - rpc.ops - INFO - Trader : 0 registering seller: 0's products on warehouse!
+15:31:34 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:34 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:34 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:34 - rpc.ops - INFO - Ware house sellers: {'0': {'product': 'salt', 'quantity': 10}}
+15:31:34 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:34 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:34 - json_files.json_ops - INFO - Reading seller from a trader_cache_4 file
+15:31:34 - json_files.json_ops - INFO - Complete filename: trader_cache_4.json
+15:31:34 - json_files.json_ops - INFO - Reading from trader_cache_4.json file is successful
+15:31:34 - rpc.ops - INFO -  =============After reading: {'2': {'product': 'boar', 'quantity': 0}} 
+15:31:34 - json_files.json_ops - INFO - Writing sellers to trader_cache_4 file
+15:31:35 - json_files.json_ops - INFO - Writing to a trader_cache_4.json file is successful
+15:31:35 - rpc.ops - INFO - trader4  house sellers: {'2': {'product': 'boar', 'quantity': 0}}
+15:31:35 - json_files.json_ops - INFO - Reading seller from a trader_cache_5 file
+15:31:35 - json_files.json_ops - INFO - Complete filename: trader_cache_5.json
+15:31:35 - json_files.json_ops - INFO - Reading from trader_cache_5.json file is successful
+15:31:35 - rpc.ops - INFO -  =============After reading: {'2': {'product': 'boar', 'quantity': 0}} 
+15:31:35 - json_files.json_ops - INFO - Writing sellers to trader_cache_5 file
+15:31:35 - json_files.json_ops - INFO - Writing to a trader_cache_5.json file is successful
+15:31:35 - rpc.ops - INFO - trader5  house sellers: {'2': {'product': 'boar', 'quantity': 0}}
+15:31:35 - rpc.ops - INFO - Trader : 2 registering seller: 2's products on warehouse!
+15:31:35 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:35 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:35 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:35 - rpc.ops - INFO - Ware house sellers: {'2': {'product': 'boar', 'quantity': 10}}
+15:31:35 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:35 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:35 - json_files.json_ops - INFO - Reading seller from a trader_cache_4 file
+15:31:35 - json_files.json_ops - INFO - Complete filename: trader_cache_4.json
+15:31:35 - json_files.json_ops - INFO - Reading from trader_cache_4.json file is successful
+15:31:35 - rpc.ops - INFO -  =============After reading: {'2': {'product': 'boar', 'quantity': 0}} 
+15:31:35 - json_files.json_ops - INFO - Writing sellers to trader_cache_4 file
+15:31:35 - json_files.json_ops - INFO - Writing to a trader_cache_4.json file is successful
+15:31:35 - rpc.ops - INFO - trader4  house sellers: {'2': {'product': 'boar', 'quantity': 10}}
+15:31:35 - json_files.json_ops - INFO - Reading seller from a trader_cache_5 file
+15:31:35 - json_files.json_ops - INFO - Complete filename: trader_cache_5.json
+15:31:35 - json_files.json_ops - INFO - Reading from trader_cache_5.json file is successful
+15:31:35 - rpc.ops - INFO -  =============After reading: {'2': {'product': 'boar', 'quantity': 0}} 
+15:31:35 - json_files.json_ops - INFO - Writing sellers to trader_cache_5 file
+15:31:36 - json_files.json_ops - INFO - Writing to a trader_cache_5.json file is successful
+15:31:36 - rpc.ops - INFO - trader5  house sellers: {'2': {'product': 'boar', 'quantity': 10}}
+15:31:44 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:44 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:44 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:44 - rpc.ops - INFO - Inside buy_on_warehouse()
+15:31:44 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 10}}
+15:31:44 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:44 - rpc.ops - INFO - Selected seller: 2
+15:31:44 - rpc.ops - INFO - Quantity remaining: 9
+15:31:44 - rpc.ops - INFO - Buy is successful
+15:31:44 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:45 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:45 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:45 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:45 - process - INFO - called_scheduler() is called
+15:31:45 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:45 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:45 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:54 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:54 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:54 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:54 - rpc.ops - INFO - Inside buy_on_warehouse()
+15:31:54 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 9}}
+15:31:54 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:54 - rpc.ops - INFO - Selected seller: 2
+15:31:54 - rpc.ops - INFO - Quantity remaining: 8
+15:31:54 - rpc.ops - INFO - Buy is successful
+15:31:54 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:54 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:54 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:54 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:54 - json_files.json_ops - INFO - Reading seller from a warehouse file
+15:31:54 - json_files.json_ops - INFO - Complete filename: warehouse.json
+15:31:54 - json_files.json_ops - INFO - Reading from warehouse.json file is successful
+15:31:54 - rpc.ops - INFO - Inside buy_on_warehouse()
+15:31:54 - rpc.ops - INFO - All sellers: {'2': {'product': 'boar', 'quantity': 8}}
+15:31:54 - rpc.ops - INFO - Available Sellers: ['2']
+15:31:54 - rpc.ops - INFO - Selected seller: 2
+15:31:54 - rpc.ops - INFO - Quantity remaining: 7
+15:31:54 - rpc.ops - INFO - Buy is successful
+15:31:54 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:55 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
+15:31:55 - json_files.json_ops - INFO - Writing sellers to warehouse file
+15:31:56 - json_files.json_ops - INFO - Writing to a warehouse.json file is successful
